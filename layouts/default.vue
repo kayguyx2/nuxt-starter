@@ -42,7 +42,9 @@
       </div>
     </v-app-bar>
     <v-main>
-      <Nuxt />
+      <div class="tw-w-full tw-h-full tw-p-5">
+        <Nuxt />
+      </div>
     </v-main>
   </v-app>
 </template>

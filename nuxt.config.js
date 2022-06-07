@@ -16,7 +16,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700&display=swap' }
     ]
   },
 
@@ -31,7 +33,12 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/shared'
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -77,7 +84,7 @@ export default {
         }
       }
     },
-    // treeShake: true
+    // treeShake: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
