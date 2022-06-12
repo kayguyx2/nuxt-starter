@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+
+[lang='en'] body {
+  font-family: $font-en;
+}
+
+[lang='th'] body {
+  font-family: $font-th;
+}
+
+[lang='en'] body .v-application {
+  font-family: $font-en;
+}
+
+[lang='th'] body .v-application {
+  font-family: $font-th;
+}

@@ -18,13 +18,17 @@ export default {
     link: [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700&display=swap' }
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700&display=swap&family=Poppins:wght@100;300;400;500;600;700&display=swap&family=IBM+Plex+Sans+Thai:wght@100;300;400;500;600;700&display=swap'
+      },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/main.css',
+    '@/assets/scss/custom.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,7 +40,8 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/shared'
+      '~/components/shared',
+      '~/components/shared/tables'
     ]
   },
 

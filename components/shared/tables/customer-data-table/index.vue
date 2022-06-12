@@ -10,17 +10,16 @@
     >
       <!-- eslint-disable-next-line vue/valid-v-slot vue/no-unused-vars -->
       <template v-slot:item.actions="{ item }">
-        <v-icon
-          small
-          class="mr-2"
+        <v-btn
+          icon
         >
-          mdi-pencil
-        </v-icon>
-        <v-icon
-          small
+          <v-icon small>mdi-pencil</v-icon>
+        </v-btn>
+        <v-btn
+          icon
         >
-          mdi-delete
-        </v-icon>
+          <v-icon small>mdi-delete</v-icon>
+        </v-btn>
       </template>
     </v-data-table>
   </div>

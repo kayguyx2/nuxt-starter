@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1 class="tw-text-3xl tw-mb-5">จัดการสมาชิก</h1>
-    <CustomDataTable
+    <CustomerDataTable
       :table-headers="tableHeaders"
-    ></CustomDataTable>
+    ></CustomerDataTable>
   </div>
 </template>
 
@@ -15,7 +15,6 @@
           {
             text: 'เบอร์ติดต่อ',
             align: 'start',
-            sortable: false,
             value: 'name',
           },
           { text: 'ชื่อบัญชี', value: 'calories' },

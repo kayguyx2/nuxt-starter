@@ -2,8 +2,12 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
-$body-font-family: 'Kanit';
-$heading-font-family: 'Kanit';
+$font-family-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-en: IBM Plex Sans Thai, $font-family-default;
+$font-th: IBM Plex Sans Thai, $font-family-default;
+
 $utilities: (
   margin: false,
   margin-x: false,
