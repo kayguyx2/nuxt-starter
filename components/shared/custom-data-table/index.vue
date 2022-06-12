@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-data-table
-      :headers="headers"
+      :headers="tableHeaders"
       :items="desserts"
       :options.sync="options"
       :server-items-length="totalDesserts"
@@ -28,26 +28,20 @@
 
 <script>
   export default {
+    props: {
+      tableHeaders: {
+        type: Array,
+        default () {
+          return []
+        }
+      }
+    },
     data () {
       return {
         totalDesserts: 0,
         desserts: [],
         loading: true,
         options: {},
-        headers: [
-          {
-            text: 'เบอร์ติดต่อ',
-            align: 'start',
-            sortable: false,
-            value: 'name',
-          },
-          { text: 'ชื่อบัญชี', value: 'calories' },
-          { text: 'เลขบัญชี', value: 'fat' },
-          { text: 'ธนาคาร', value: 'carbs' },
-          { text: 'สถานะบัญชี', value: 'protein' },
-          { text: 'สถานะ', value: 'iron' },
-          { text: 'Actions', value: 'actions', sortable: false },
-        ],
       }
     },
     watch: {

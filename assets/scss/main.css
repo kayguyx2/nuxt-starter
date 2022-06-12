@@ -1,3 +1,10 @@
 /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  table .thin-cell {
+    width: 1%;
+    white-space: nowrap;
+  }
+}
